@@ -1,0 +1,15 @@
+plan for the project
+
+To do list
+
+goal : to build a simple to do list app that can add,read,delete tasks
+
+features:
+1:show menu
+1: add-add a task and show a confirm msg
+2: read-show all the task with the list number
+3: delete - show the list and delete the task
+4: exit
+
+
+
