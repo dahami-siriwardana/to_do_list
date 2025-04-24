@@ -1,4 +1,4 @@
-tasks=["hello","hi","hola"] #This is an empty list like a database
+tasks=[] #This is an empty list like a database
 
 def show_menu():
     print("\n📝To-Do List Menu")
@@ -31,6 +31,30 @@ def delete_task():
             print("invalid number.")
     except ValueError:
         print (" please enter a valid number")
+
+def main():
+    while True:
+        show_menu()
+        try:
+            choice = int(input("please choose option from 1 to 4 "))
+            if choice == 1:
+                addTask()
+            elif choice == 2:
+                view_Task()
+            elif choice == 3:
+                delete_task()
+            elif choice == 4:
+                print ("goodbye!")
+                break
+            else:
+                print("Invalid choice")
+        except ValueError:
+            print("please enter a valid number")
+
+main()
+
+
+
         
 
 
